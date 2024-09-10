@@ -1,0 +1,150 @@
+
+.container {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.6s, color 0.6s;
+  position: fixed;
+  width: 100%;
+}
+
+.bg-slate-600 img {
+  display: block;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+
+li {
+  cursor: pointer;
+  transition: color 0.3s; 
+}
+
+.dark-mode-toggle {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+
+.mode-icon {
+  width: 30px;
+  height: auto;
+  transition: filter 0.3s;
+}
+
+
+button {
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; 
+}
+.container {
+  background-color: #f0f0f0; 
+  color: #333; 
+}
+
+li {
+  color: #333; 
+}
+
+.dark-mode .container {
+  background-color: #333; 
+  color: #f0f0f0; 
+}
+
+.dark-mode li {
+  color: #f0f0f0;
+}
+
+.dark-mode .mode-icon {
+  filter: invert(1); 
+}
+
+@media (max-width: 1200px) {
+ul {
+  gap: 50px;
+}
+}
+
+@media (max-width: 992px) {
+.container {
+  padding: 10px;
+}
+
+ul {
+  font-size: 12px;
+  gap: 30px;
+}
+ul li{
+  font-size: 12px;
+}
+
+.bg-slate-600 img {
+  width: 70px;
+  height: 70px;
+}
+
+button {
+  font-size: 14px;
+  padding: 8px 16px;
+}
+}
+
+@media (max-width: 768px) {
+ul {
+  gap: 40px;
+}
+ul li{
+  font-size: 12px;
+}
+
+.bg-slate-600 img {
+  width: 60px;
+  height: 60px;
+}
+
+button {
+  font-size: 12px;
+  padding: 6px 12px;
+}
+}
+
+@media (max-width: 576px) {
+.container {
+  padding: 10px 5px;
+}
+
+ul {
+  gap: 15px;
+}
+ul li{
+  font-size: 10px;
+}
+
+
+.bg-slate-600 img {
+  width: 50px;
+  height: 50px;
+}
+
+button {
+  font-size: 10px;
+  padding: 5px 10px;
+}
+}
+.dark-mode img{
+width: 50px;
+height: 50px;
+
+}

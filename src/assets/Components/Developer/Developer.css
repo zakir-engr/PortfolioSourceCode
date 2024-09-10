@@ -1,0 +1,192 @@
+.Profile{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+    width: auto;
+}
+.Profile img{
+    margin-top: 150px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+.Profile h1{
+    text-align: center;
+    width: 70%;
+    font-size: 50px;
+    font-weight: 600;
+ 
+}
+.Profile h1 span {
+    background: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
+    -webkit-background-clip: text;
+    background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    display: inline; 
+}
+.Profile p{
+    width: 50%;
+    text-align: center;
+    font-size: 24px;
+   
+}
+.action{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+.connect{
+    background: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
+    border-color: white;
+    padding: 25px 45px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.connect:hover{
+  color: white;
+    background: transparent;
+    border: 1px solid white;
+}
+.resume{
+    background: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
+    border-color: white;
+    padding: 25px 45px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.resume:hover{
+  color: white;
+    background: transparent;
+    border: 1px solid white;
+}
+.drop-down img{
+  margin-bottom: 20px;
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  right: 0;
+  top: 500px;
+}  
+.drop-up img{
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  right: 0;
+  margin-top: 100px;
+  top: 500px;
+}  
+
+@media (max-width: 1200px) {
+    .Profile img {
+      width: 250px;
+      height: 250px;
+    }
+  
+    .Profile h1 {
+      font-size: 40px;
+      width: 80%;
+    }
+  
+    .Profile p {
+      width: 60%;
+      font-size: 20px;
+    }
+  
+    .action {
+      font-size: 20px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .Profile img {
+      width: 200px;
+      height: 200px;
+    }
+  
+    .Profile h1 {
+      font-size: 35px;
+      width: 90%;
+    }
+  
+    .Profile p {
+      width: 70%;
+      font-size: 18px;
+      line-height: 30px;
+    }
+  
+    .action {
+      flex-direction: column;
+      gap: 15px;
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+  
+    .connect, .resume {
+      padding: 20px 40px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .Profile img {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .Profile h1 {
+      font-size: 30px;
+      width: 100%;
+    }
+  
+    .Profile p {
+      width: 80%;
+      font-size: 16px;
+      line-height: 28px;
+    }
+  
+    .action {
+      font-size: 16px;
+      gap: 10px;
+    }
+  
+    .connect, .resume {
+      padding: 15px 30px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .Profile {
+      gap: 20px;
+    }
+  
+    .Profile img {
+      width: 120px;
+      height: 120px;
+      margin-top: 100px;
+    }
+  
+    .Profile h1 {
+      font-size: 24px;
+    }
+  
+    .Profile p {
+      width: 90%;
+      font-size: 14px;
+      line-height: 24px;
+    }
+  
+    .action {
+      font-size: 14px;
+      gap: 5px;
+      margin-bottom: 20px;
+    }
+  
+    .connect, .resume {
+      padding: 10px 20px;
+    }
+  }
+
+
